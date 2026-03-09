@@ -2,48 +2,48 @@ layout: {zmk_keyboard: roBa}
 layers:
   default:
   - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - {t: I, h: SCROLL}
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - Sft+Gui+S
-  - '-'
-  - H
-  - J
-  - K
   - L
-  - ''''
+  - U
+  - ','
+  - .
+  - F
+  - W
+  - {t: R, h: SCROLL}
+  - Y
+  - P
+  - E
+  - I
+  - A
+  - O
+  - '-'
+  - Sft+Gui+4
+  - ;
+  - K
+  - T
+  - N
+  - S
+  - H
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
   - V
-  - B
-  - ':'
-  - ;
-  - N
-  - M
-  - ','
-  - .
   - /
+  - LANG2
+  - LANG1
+  - G
+  - D
+  - M
+  - J
+  - B
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 INT_HENKAN', h: '6'}
+  - {t: '&to_layer_0 TAB', h: '6'}
   - {t: SPACE, h: NUM}
-  - {t: '&to_layer_0 INT_MUHENKAN', h: ARROW}
+  - {t: '&to_layer_0 ESC', h: ARROW}
   - BACKSPACE
   - {t: ENTER, h: FUNCTION}
-  - DEL
+  - RIGHT SHIFT
   FUNCTION:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
