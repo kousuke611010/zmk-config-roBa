@@ -16,7 +16,7 @@ layers:
   - A
   - O
   - '-'
-  - Sft+Gui+4
+  - '&mkp MB1'
   - ;
   - K
   - T
@@ -124,7 +124,7 @@ layers:
   - '}'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - KP 0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
