@@ -72,7 +72,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            bindings = 
+            bindings = <
 &kp Q             &kp L         &kp U         &kpls COMMA           &kpls PERIOD                                           &kp F          &kp W  &lt 5 R  &kp Y  &kp P
 &kp E             &kp I         &kp A         &kp O                 &kpls MINUS  &mkp MB1                  &kpls PLUS       &kp K          &kp T  &kp N    &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kpls SLASH  &kp LANG2                 &kp LANG1        &kp G          &kp D  &kp M    &kp J  &kp B
@@ -81,7 +81,7 @@
         };
 
         FUNCTION {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                                  &kp F1      &kp F2  &kp F3                &kp F4         &kp F5
 &trans  &trans  &trans  &trans  &trans  &trans      &kp F13             &kp F6      &kp F7  &kp F8                &kp F9         &kp F10
 &trans  &trans  &trans  &trans  &trans  &trans      &kp LC(LA(DELETE))  &kp KP_NUM  &trans  &kp LC(LS(NUMBER_4))  &kp LG(LS(S))  &kp F12
@@ -90,7 +90,7 @@
         };
 
         NUM {
-            bindings = 
+            bindings = <
 &kpls MINUS                 &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kpls PLUS                                                     &kpls QUESTION      &kpls AMPERSAND      &kpls TILDE       &kpls LEFT_PARENTHESIS  &kpls RIGHT_PARENTHESIS
 &kpls SLASH                 &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kpls ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kpls SEMICOLON  &kpls EXCLAMATION   &kpls AT_SIGN        &kpls HASH        &kpls DOLLAR            &kpls PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kpls PERIOD    &kpls EQUAL                  &kpls UNDERSCORE &kpls LEFT_BRACKET  &kpls RIGHT_BRACKET  &kpls LEFT_BRACE  &kpls RIGHT_BRACE       &kpls BACKSLASH
@@ -99,7 +99,7 @@
         };
 
         ARROW {
-            bindings = 
+            bindings = <
 &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -108,7 +108,7 @@
         };
 
         MOUSE {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans  &trans
@@ -117,7 +117,7 @@
         };
 
         SCROLL {
-            bindings = 
+            bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
@@ -126,7 +126,7 @@
         };
 
         BT {
-            bindings = 
+            bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &bt BT_CLR
