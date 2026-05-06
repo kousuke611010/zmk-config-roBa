@@ -38,7 +38,7 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '&to_layer_0 TAB', h: '6'}
+  - {t: '&to_layer_0 TAB', h: BT}
   - {t: SPACE, h: NUM}
   - {t: '&to_layer_0 ESC', h: ARROW}
   - BACKSPACE
@@ -73,12 +73,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Ctl+Alt+DEL
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F11
+  - KP NUMLOCK
+  - Ctl+Sft+4
+  - Gui+Sft+S
+  - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -87,14 +87,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - F12
+  - F11
   NUM:
   - '-'
   - KP 7
   - KP 8
   - KP 9
   - +
-  - ^
+  - '?'
   - '&'
   - '~'
   - (
@@ -109,7 +109,7 @@ layers:
   - '!'
   - '@'
   - '#'
-  - $
+  - ':'
   - '%'
   - {t: KP 0, h: LEFT SHIFT}
   - KP 1
@@ -118,7 +118,7 @@ layers:
   - .
   - '='
   - {t: ▽, type: trans}
-  - '['
+  - +
   - ']'
   - '{'
   - '}'
@@ -196,8 +196,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&mkp MB1'
-  - '&mkp MB3'
-  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -264,7 +264,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  BT:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -319,3 +319,5 @@ combos:
   k: '"'
 - p: [24, 25]
   k: '='
+- p: [19, 20]
+  k: '&mkp MB2'
