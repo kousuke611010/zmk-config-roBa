@@ -83,9 +83,9 @@
 
         // ===========================================================
         // Layer 0: 大西配列 (Onishi) - default
-        //   Q L U , .   |   F W R Y P
-        //   E I A O -   |   : K T N S H
-        //   Z X C V /   |   G D M J B
+        //   Q L U , .       F W R Y P
+        //   E I A O -   :   K T N S H
+        //   Z X C V /       G D M J B
         // ===========================================================
         default_layer {
             bindings = 
