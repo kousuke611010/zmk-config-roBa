@@ -10,7 +10,7 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // driver方式AMLは無効化し、Input Processor(zip_temp_layer)方式に移行
     scroll-layers = <5>;
 };
 

@@ -1,7 +1,19 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
+};
+
+// Input Processor方式のオートマウスレイヤー(AML)設定
+&zip_temp_layer {
+    // タイピング直後200msはAMLを発動させない(キー入力中の誤爆防止)
+    require-prior-idle-ms = <200>;
+
+    // ここに挙げた位置のキーはAMLを解除しない(=クリックしてもAMLが維持される)。
+    // それ以外のキーを押すと即座にAMLを抜けるため、クリックが文字化けしない。
+    //   19 = MOUSEレイヤーの左クリック(&mkp MB1)の位置
+    excluded-positions = <19>;
 };
 
 &kscan0 {
@@ -19,6 +31,9 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        // トラボ使用後2000ms間、レイヤー4(MOUSE)を有効化する
+        input-processors = <&zip_temp_layer 4 2000>;
     };
 };
 
