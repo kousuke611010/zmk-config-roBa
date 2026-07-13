@@ -4,8 +4,8 @@ layers:
   - Q
   - L
   - U
-  - ','
-  - .
+  - '&kpls COMMA'
+  - '&kpls PERIOD'
   - F
   - W
   - {t: R, h: SCROLL}
@@ -15,9 +15,9 @@ layers:
   - I
   - A
   - O
-  - '-'
+  - '&kpls MINUS'
   - '&mkp MB1'
-  - ;
+  - ''''
   - K
   - T
   - N
@@ -27,7 +27,7 @@ layers:
   - X
   - C
   - V
-  - /
+  - '&kpls SLASH'
   - LANG2
   - LANG1
   - G
@@ -74,7 +74,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Ctl+Alt+DELETE
-  - {t: ▽, type: trans}
+  - KP NUM
   - {t: ▽, type: trans}
   - Ctl+Sft+4
   - Gui+Sft+S
@@ -89,40 +89,40 @@ layers:
   - {type: held}
   - F11
   NUM:
-  - '-'
+  - '&kpls MINUS'
   - KP 7
   - KP 8
   - KP 9
-  - +
-  - '?'
-  - '&'
-  - '~'
-  - (
-  - )
-  - /
+  - '&kpls PLUS'
+  - '&kpls QUESTION'
+  - '&kpls AMPERSAND'
+  - '&kpls TILDE'
+  - '&kpls LEFT_PARENTHESIS'
+  - '&kpls RIGHT_PARENTHESIS'
+  - '&kpls SLASH'
   - KP 4
   - KP 5
   - KP 6
-  - '*'
+  - '&kpls ASTERISK'
   - Ctl+Alt+KP 0
-  - _
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '&kpls SEMICOLON'
+  - '&kpls EXCLAMATION'
+  - '&kpls AT_SIGN'
+  - '&kpls HASH'
+  - '&kpls DOLLAR'
+  - '&kpls PERCENT'
   - {t: KP 0, h: LEFT SHIFT}
   - KP 1
   - KP 2
   - KP 3
-  - .
-  - '='
-  - {t: ▽, type: trans}
-  - '['
-  - ']'
-  - '{'
-  - '}'
-  - \
+  - '&kpls PERIOD'
+  - '&kpls EQUAL'
+  - '&kpls UNDERSCORE'
+  - '&kpls LEFT_BRACKET'
+  - '&kpls RIGHT_BRACKET'
+  - '&kpls LEFT_BRACE'
+  - '&kpls RIGHT_BRACE'
+  - '&kpls BACKSLASH'
   - {t: ▽, type: trans}
   - KP 0
   - {t: ▽, type: trans}
@@ -131,7 +131,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '|'
+  - '&kpls PIPE'
   ARROW:
   - ESCAPE
   - Ctl+Sft+TAB
@@ -306,7 +306,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&tog_ls'
   - BT CLR ALL
 combos:
 - p: [11, 12]
@@ -316,8 +316,8 @@ combos:
 - p: [11, 10]
   k: '&to_layer_0 INT_MUHENKAN'
 - p: [20, 21]
-  k: '"'
+  k: '&kpls DOUBLE_QUOTES'
 - p: [24, 25]
-  k: '='
+  k: '&kpls EQUAL'
 - p: [19, 20]
   k: '&mkp MB2'
