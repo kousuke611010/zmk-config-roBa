@@ -13,6 +13,9 @@
     // driver方式AMLは無効化し、Input Processor(zip_temp_layer)方式に移行
 
     scroll-layers = <5>;
+        input-processors = <
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_scaler 2 3
 };
 
 / {
