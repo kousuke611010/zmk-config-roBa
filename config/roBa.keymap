@@ -12,10 +12,14 @@
 &trackball {
     // driver方式AMLは無効化し、Input Processor(zip_temp_layer)方式に移行
 
+    // レイヤー5でドライバがXY移動をスクロールに変換する。
+    // 1ノッチあたりの必要カウント数は roBa_R.conf の
+    // CONFIG_PMW3610_SCROLL_TICK で調整する(大きいほど遅い)。
     scroll-layers = <5>;
-        input-processors = <
-            &zip_xy_to_scroll_mapper
-            &zip_scroll_scaler 2 3
+
+    // input-processors は input-listener 側のプロパティのため、
+    // デバイスノードに書いても効かない。実際の設定は
+    // roBa_R.overlay の trackball_listener に集約している。
 };
 
 / {
