@@ -35,6 +35,12 @@
 
         // トラボ使用後2000ms間、レイヤー4(MOUSE)を有効化する
         input-processors = <&zip_temp_layer 4 2000>;
+
+        // スクロールレイヤー(5)有効時にスクロール量を抑制(1/4倍)
+        scroller {
+            layers = <5>;
+            input-processors = <&zip_scroll_scaler 1 4>;
+        };
     };
 };
 
