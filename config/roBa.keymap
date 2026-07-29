@@ -11,6 +11,7 @@
 
 &trackball {
     // driver方式AMLは無効化し、Input Processor(zip_temp_layer)方式に移行
+
     scroll-layers = <5>;
 };
 
@@ -75,7 +76,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp L         &kp U         &kpls COMMA           &kpls PERIOD                                              &kp F        &kp W  &lt 5 R  &kp Y  &kp P
-&kp E             &kp I         &kp A         &kp O                 &kpls MINUS   &mkp MB1                  &kp SINGLE_QUOTE  &kp K        &kp T  &kp N    &kp S  &kp H
+&kp E             &kp I         &kp A         &kp O                 &kpls MINUS   &mkp MB1                  &kp SINGLE_QUOTE  &kp K        &kp T  &lt 5 N  &kp S  &kp H
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kpls SLASH   &kp LANG2                 &kp LANG1         &kp G        &kp D  &kp M    &kp J  &kp B
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 TAB  &lt 2 SPACE   &lt_to_layer_0 3 ESC      &kp BACKSPACE     &lt 1 ENTER                         &kp RIGHT_SHIFT
             >;
