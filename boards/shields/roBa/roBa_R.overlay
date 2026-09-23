@@ -7,8 +7,8 @@
 
 // Input Processor方式のオートマウスレイヤー(AML)設定
 &zip_temp_layer {
-    // タイピング直後200msはAMLを発動させない(キー入力中の誤爆防止)
-    require-prior-idle-ms = <200>;
+    // タイピング直後500msはAMLを発動させない(キー入力中の誤爆防止)
+    require-prior-idle-ms = <500>;
 
     // ここに挙げた位置のキーはAMLを解除しない(=クリックしてもAMLが維持される)。
     // それ以外のキーを押すと即座にAMLを抜けるため、クリックが文字化けしない。
@@ -33,8 +33,8 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        // トラボ使用後2000ms間、レイヤー4(MOUSE)を有効化する
-        input-processors = <&zip_temp_layer 4 2000>;
+        // トラボ使用後800ms間、レイヤー4(MOUSE)を有効化する
+        input-processors = <&zip_temp_layer 4 800>;
     };
 };
 
